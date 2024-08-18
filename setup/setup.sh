@@ -62,7 +62,7 @@ fi
 # Install Python packages
 echo "This script installs Python packages defined in '$PYTHON_REQUIREMENTS_FILE'."
 echo "Installing requirements..."
-pip install --no-cache-dir --upgrade --requirement "$PYTHON_REQUIREMENTS_FILE"
+pip3 install --no-cache-dir --upgrade --requirement "$PYTHON_REQUIREMENTS_FILE"
 
 # Touch finished-indicator
 echo "Touching finished."

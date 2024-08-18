@@ -1,0 +1,10 @@
+---
+- name: Setup webserver
+  hosts: localhost
+  connection: local
+  tasks:
+    - shell: cat /etc/hosts
+      register: result
+
+    - debug:
+      var: result.stdout

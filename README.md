@@ -5,3 +5,4 @@ Ubuntu was the first Linux distro I ever used, and I’ve loved it ever since. I
 
 Plus, setting everything up on Ubuntu gives me a great excuse to practice my Ansible skills. Automating the setup with Ansible makes sure everything is consistent, lightweight, and easy to manage.
 # Getting Started
+ansible-playbook -i ansible/local.ini site.yml -K

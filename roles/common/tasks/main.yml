@@ -1,0 +1,11 @@
+---
+- name: Setup webserver
+  hosts: localhost
+  tasks:
+    - name: Display /etc/hosts content
+      shell: cat /etc/hosts
+      register: result
+
+    - name: Show the content of /etc/hosts
+      debug:
+        var: result.stdout
